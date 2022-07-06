@@ -46,9 +46,9 @@ const Home: NextPage<{markets?: Market[]}> = ({ markets = [] }) => (
 )
 
 export async function getStaticProps() {
-  const queryMarkets =  gql`
+  const queryMarkets = gql`
     query MarketsQuery {
-      markets(limit: 10, skip: 0) {
+      markets(limit: 0, skip: 0) {
         location {
           id
           name
