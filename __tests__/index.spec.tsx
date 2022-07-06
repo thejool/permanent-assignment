@@ -12,10 +12,6 @@ describe('pages | index', () => {
       location: {
         name: 'Test location',
         id: '123',
-      },
-      producer: {
-        name: 'Test producer',
-        id: '123',
       }
     }]
     render(<Index markets={markets} />)

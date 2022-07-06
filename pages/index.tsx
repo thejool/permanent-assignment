@@ -13,10 +13,6 @@ interface Market {
       src: string
     }
   }
-  producer: {
-    id: string
-    name: string
-  }
 }
 
 const Home: NextPage<{markets?: Market[]}> = ({ markets = [] }) => (
@@ -55,10 +51,6 @@ export async function getStaticProps() {
           image {
             src
           }
-        }
-        producer {
-          id
-          name
         }
       }
     }
