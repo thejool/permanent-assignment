@@ -41,7 +41,7 @@ const Home: NextPage<{markets?: Market[]}> = ({ markets = [] }) => (
   </div>
 )
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const queryMarkets = gql`
     query MarketsQuery {
       markets(limit: 0, skip: 0) {
